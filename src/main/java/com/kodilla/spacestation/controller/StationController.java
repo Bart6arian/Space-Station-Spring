@@ -1,6 +1,5 @@
 package com.kodilla.spacestation.controller;
 
-import com.kodilla.spacestation.domain.MessageType;
 import com.kodilla.spacestation.domain.TelescopeResponseDto;
 import com.kodilla.spacestation.mapper.TelescopeResponseMapper;
 import com.kodilla.spacestation.service.TelescopeResponseService;
@@ -14,7 +13,7 @@ import java.util.List;
 @RequestMapping("/telescope")
 public class StationController {
 
-    private TelescopeResponseService service;
+    private final TelescopeResponseService service;
 
     @GetMapping
     @ResponseBody
